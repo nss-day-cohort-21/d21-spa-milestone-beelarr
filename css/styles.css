@@ -1,0 +1,11 @@
+#nav-input {
+  margin-top: 1%; }
+
+.col {
+  border: solid 2px black;
+  border-radius: 3px; }
+  .col:active {
+    border: solid 4px;
+    background-color: antiquewhite; }
+
+/*# sourceMappingURL=styles.css.map */
