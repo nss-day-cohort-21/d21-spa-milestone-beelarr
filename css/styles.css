@@ -1,11 +1,19 @@
+nav {
+  background: slategray; }
+
+.navbar-brand {
+  color: white; }
+
 #nav-input {
-  margin-top: 1%; }
+  margin: 1%;
+  padding: 1% 0.5%;
+  width: 30%; }
 
 #col {
   border: solid 2px black;
   border-radius: 3px; }
   #col:active {
     border: solid 4px;
-    background-color: antiquewhite; }
+    background-color: lightgrey; }
 
 /*# sourceMappingURL=styles.css.map */
