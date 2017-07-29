@@ -1,13 +1,17 @@
 nav {
   background: slategray; }
 
+img {
+  border: solid gray 2px;
+  border-radius: 2px;
+  display: flex;
+  flex-shrink: 1;
+  justify-content: center;
+  margin: 2% 0 2% 10%;
+  width: 80%; }
+
 .navbar-brand {
   color: white; }
-
-#nav-input {
-  margin: 1%;
-  padding: 1% 0.5%;
-  width: 30%; }
 
 #col {
   border: solid 2px black;
@@ -15,5 +19,10 @@ nav {
   #col:active {
     border: solid 4px;
     background-color: lightgrey; }
+
+#nav-input {
+  margin: 1%;
+  padding: 1% 0.5%;
+  width: 30%; }
 
 /*# sourceMappingURL=styles.css.map */

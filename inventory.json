@@ -1,7 +1,7 @@
 {
   "cars": [
     {
-      "image": "./img/1.jpeg",
+      "image": "./img/1.jpg",
       "make": "Nissan",
       "model": "Rogue",
       "year": "2006",
@@ -9,7 +9,7 @@
       "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
     },
     {
-      "image": "/img/2.jpeg",
+      "image": "./img/2.jpg",
       "make": "Chevrolet",
       "model": "Corvette",
       "year": "2006",
@@ -17,7 +17,7 @@
       "description": "This is an immaculate 2006 Chevrolet Corvette with only 25000 miles on it. Leather seats, power everything."
     },
     {
-      "image": "/img/3.jpeg",
+      "image": "./img/3.jpg",
       "make": "Toyota",
       "model": "Prius",
       "year": "2006",
@@ -27,7 +27,7 @@
   ],
   "trucks": [
     {
-      "image": "/img/4.jpeg",
+      "image": "./img/4.jpg",
       "make": "Nissan",
       "model": "Titan",
       "year": "2006",
@@ -35,7 +35,7 @@
       "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
     },
     {
-      "image": "/img/5.jpeg",
+      "image": "./img/5.jpg",
       "make": "Chevrolet",
       "model": "Colorado",
       "year": "2006",
@@ -43,7 +43,7 @@
       "description": "This is an immaculate 2006 Chevrolet Corvette with only 25000 miles on it. Leather seats, power everything."
     },
     {
-      "image": "/img/6.jpeg",
+      "image": "./img/6.jpg",
       "make": "Toyota",
       "model": "Landcrusier",
       "year": "2006",

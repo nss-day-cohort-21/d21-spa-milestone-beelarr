@@ -20,10 +20,10 @@
 {
     function loader_autos(cars) {
         cars.cars.forEach((e) => {
-            console.log(e)
+            console.log(e.image)
             document.querySelector('.row1').innerHTML +=
                 `<div id ="col" class="col-xs-4">
-                    <img src="${e.image}" alt="${e.make} photo">
+                    <img id="image"src="${e.image}" alt="${e.model} photo">
                     <h3>${e.make}</h3>
                     <h4>${e.model}</h4>
                     <h5>${e.year}</h5>
@@ -35,7 +35,8 @@
         cars.trucks.forEach((e) => {
 
             document.querySelector('.row2').innerHTML +=
-                `<div id ="col" class="col-xs-4 ">
+                `<div id ="col" class="col-xs-4">
+                <img id="image"src="${e.image}" alt="${e.model} photo">                
                 <h3>${e.make}</h3>
                 <h4>${e.model}</h4>
                 <h5>${e.year}</h5>
