@@ -15,7 +15,9 @@ img {
 
 #col {
   border: solid 2px black;
-  border-radius: 3px; }
+  border-radius: 3px;
+  margin: 1% 1%;
+  width: 31%; }
   #col:active {
     border: solid 4px;
     background-color: lightgrey; }
