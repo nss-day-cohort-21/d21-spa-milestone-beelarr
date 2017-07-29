@@ -56,20 +56,34 @@ function loader_autos(cars) {
 
 vehicles.load_items(loader_autos);
 
-//
-let car_card = document.getElementsByClassName('col-xs-4')
 
-let getting_cards = (e)=>{
-    console.log('getting cards')
-    let input = document.querySelector('input')
-    input.focus()
-    input.addEventListener('keyup', ()=>{
-        let current_card = e.currentTarget;
-        let description = current_card.querySelector('#description');
-        description.innerHTML = input.value
-    })
+const container = document.querySelector('.container')
+const input = document.querySelector('input')
 
-};
-Array.from(car_card).forEach(function(e) {
-    e.addEventListener('click', getting_cards);
-});
+container.addEventListener('click', activate_card);
+input.addEventListener('keypress', edit_card)
+
+function edit_card() {
+    let input_value = input.value
+    let card = document.querySelector('.active')
+    let description = card.querySelector('#description')
+    description.innerHTML = input_value;
+
+}
+
+function activate_card(e) {
+    if (e.target.parentNode.classList.contains('col-xs-4')){
+        let card_array = Array.from(document.getElementsByClassName('col-xs-4'))
+        console.log(card_array)
+        card_array.forEach((event)=>{
+            event.classList.remove('active')
+        });
+        console.log(e.target)
+        e.target.parentNode.classList.add('active');
+        input.focus();
+
+    }
+
+}
+
+
