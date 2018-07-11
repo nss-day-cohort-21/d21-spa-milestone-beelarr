@@ -20,7 +20,7 @@
 {
     function loader_autos(cars) {
         cars.cars.forEach((e) => {
-            console.log(e.image)
+            console.log(e.image);
             document.querySelector('.row1').innerHTML +=
                 `<div id ="col" class="col-xs-4">
                     <img id="image"src="${e.image}" alt="${e.model} photo">
@@ -53,31 +53,30 @@ vehicles.load_items(loader_autos);
 
 // ***************BUTTON AND INPUT LOGIC***********************
 
-const container = document.querySelector('.container')
-const input = document.querySelector('input')
+const container = document.querySelector('.container');
+const input = document.querySelector('input');
 
 container.addEventListener('click', activate_card);
-input.addEventListener('keypress', edit_card)
+input.addEventListener('keypress', edit_card);
 
 function edit_card() {
-    let input_value = input.value
-    let card = document.querySelector('.active')
-    let description = card.querySelector('#description')
+    let input_value = input.value;
+    let card = document.querySelector('.active');
+    let description = card.querySelector('#description');
     description.innerHTML = input_value;
 
 }
 
 function activate_card(e) {
-    console.log(e.target.parentNode)
+
     if (e.target.parentNode.classList.contains('col-xs-4')){
-        let card_array = Array.from(document.getElementsByClassName('col-xs-4'))
-        console.log(card_array)
+        let card_array = Array.from(document.getElementsByClassName('col-xs-4'));
         card_array.forEach((event)=>{
             event.classList.remove('active')
         });
-        console.log(e.target)
         e.target.parentNode.classList.add('active');
         input.focus();
+        input.value = ''
     }
 
 }
